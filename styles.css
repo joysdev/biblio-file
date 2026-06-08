@@ -1,0 +1,28 @@
+:root {
+  --background: rgb(39, 118, 139);
+  --border: rgb(0, 200, 255);
+  --text: rgb(247, 221, 76);
+  --a: ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+}
+
+/*section, a {
+    background: radial-gradient(rgb(0, 200, 255) 25%, rgb(0, 90, 128) 75%);
+   filter: blur(5px);
+    color: var(--text);
+} */
