@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Biblio File</title>
+  </head>
+  <body>
+    <h1>BIBLIO FILE</h1>
+    <nav class="nav">
+      <a class="currently-reading" href="currently-reading.html"
+        >Currently Reading</a
+      >
+
+      <a class="finished" href="finished.html">Finished</a>
+
+      <a class="did-not-finish" href="did-not-finish.html">DNF</a>
+
+      <a class="to-be-read" href="to-be-read.html">To Be Read</a>
+
+      <a class="entire-bookshelf" href="entire-bookshelf.html">Entire Bookshelf</a>
+      
+    </nav>
+    <button id="add-a-book">Add Book</button>
+    <dialog id="book-dialog">
+      <label for="title">Title</label>
+      <input required type="text" id="Title" name="Title" />
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" />
+      <label for="start-date">Start Date</label>
+      <input type="date" id="start-date" name="start-date" />
+      <label for="finished-date">Finished Date</label>
+      <input type="date" id="finished-date" name="finished-date" />
+      <select id="shelf" name="shelf">
+        <option value="currently-reading">Currently Reading</option>
+        <option value="finished">Finished</option>
+        <option value="dnf">Did Not Finish</option>
+        <option value="tbr">To Be Read</option>
+      </select>
+      <button type="button" id="close-dialog">Close</button>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
