@@ -9,26 +9,30 @@
   <body>
     <nav class="main">
       <a href="index.html" class="nav-button">Back to Main</a>
+      <button id="add-book">Add Book</button>
+      <dialog id="book-dialog">
+        <form id="book-form">
+        <label for="title">Title</label
+        ><input required type="text" id="title" name="title" />
+        <label for="author">Author</label
+        ><input type="text" id="author" name="author" />
+        <label for="start-date">Start Date</label
+        ><input type="date" id="start-date" name="start-date" />
+        <label for="finish-date">Finish Date</label
+        ><input type="date" id="finish-date" name="finish-date" />
+        <select id="shelf" name="shelf">
+          <option value="currently-reading">Currently Reading</option>
+          <option value="finished">Finished</option>
+          <option value="dnf">Did Not Finish</option>
+          <option value="tbr">To Be Read</option>
+        </select>
+        <button type="button" id="save-dialog">Save</button>
+        <button type="button" id="close-dialog">Close</button>
+        </form>
+      </dialog>
     </nav>
     <h1>Currently Reading</h1>
-    <button id="add-a-book">Add Book</button>
-    <dialog id="book-dialog">
-      <label for="title">Title</label
-      ><input required type="text" id="Title" name="Title" />
-      <label for="author">Author</label
-      ><input type="text" id="author" name="author" />
-      <label for="start-date">Start Date</label
-      ><input type="date" id="start-date" name="start-date" />
-      <label for="finish-date">Finish Date</label
-      ><input type="date" id="finish-date" name="finish-date" />
-      <select id="shelf" name="shelf">
-        <option value="currently-reading">Currently Reading</option>
-        <option value="finished">Finished</option>
-        <option value="dnf">Did Not Finish</option>
-        <option value="tbr">To Be Read</option>
-      </select>
-      <button type="button" id="close-dialog">Close</button>
-    </dialog>
+
     <section id="current-shelf">Currently Reading Shelf</section>
     <script src="script.js"></script>
   </body>
