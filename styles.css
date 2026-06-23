@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 :root {
-  --background: rgb(39, 118, 139);
-  --border: rgb(0, 200, 255);
-  --text: rgb(247, 221, 76);
-  --a: ;
+  --background: #1b0d31;
+  --navtext: #4aa6fc;
+  --h1text: #1eba03;
 }
 
 html {
@@ -11,14 +12,66 @@ html {
 
 body {
   background-color: var(--background);
-  color: var(--text);
+  color: var(--h1text);
+  font-family: 'Ysabeau', sans-serif;
 }
 
 h1 {
   text-align: center;
+  font-family: Garamond, serif;
 }
 
 a {
+  text-decoration: none;
+  color: var(--navtext);
+}
+.nav,
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#add-book {
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--navtext);
+  border: none;
+  line-height: 1;
+}
+
+#book-dialog {
+  background-color: var(--navtext);
+  padding: 2rem;
+  border: none;
+}
+
+#book-form {
+  background-color: var(--navtext);
+  color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+#book-dialog input[type="text"],
+#book-dialog input[type="date"],
+#title,
+#author,
+#start-date,
+#finished-date,
+#shelf,
+#save-dialog,
+#close-dialog {
+  color: var(--background);
+}
+
+
+
+#save-dialog,
+#close-dialog,
+#shelf {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 /*section, a {
