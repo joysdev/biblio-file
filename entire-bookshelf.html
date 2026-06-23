@@ -11,10 +11,11 @@
       <a href="index.html" class="nav-button">Back to Main</a>
     </nav>
     <section id="all-books-shelf">Bookshelf</section>
-    <button id="add-a-book">Add Book</button>
+    <button id="add-book">Add Book</button>
     <dialog id="book-dialog">
+      <form id="book-form">
       <label for="title">Title</label>
-      <input required type="text" id="Title" name="Title" />
+      <input required type="text" id="title" name="title" />
       <label for="author">Author</label>
       <input type="text" id="author" name="author" />
       <label for="start-date">Start Date</label>
@@ -28,6 +29,7 @@
         <option value="tbr">To Be Read</option>
       </select>
       <button type="button" id="close-dialog">Close</button>
+      </form>
     </dialog>
     
     <script src="script.js"></script>
